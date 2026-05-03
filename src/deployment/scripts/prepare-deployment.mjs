@@ -164,7 +164,7 @@ function createRenderYaml(settings) {
 }
 
 function createNetlifyToml() {
-  return `[build]\ncommand = "npm ci && npm run build"\npublish = "dist"\n\n[[redirects]]\nfrom = "/*"\nto = "/index.html"\nstatus = 200\n`;
+  return `[build]\ncommand = "npm ci && npm run build"\npublish = "dist"\n\n[build.environment]\nNODE_VERSION = "22"\nNODE_OPTIONS = "--max-old-space-size=4096"\n\n[[redirects]]\nfrom = "/*"\nto = "/index.html"\nstatus = 200\n`;
 }
 
 function createGithubPagesWorkflow() {
