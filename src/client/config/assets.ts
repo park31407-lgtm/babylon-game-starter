@@ -334,7 +334,7 @@ export const ASSETS = {
           name: 'MushroomVillageHemisphericLight',
           direction: new BABYLON.Vector3(0, 1, 0),
           diffuseColor: new BABYLON.Color3(0.95, 0.95, 0.98),
-          intensity: 0.1
+          intensity: 1.0
         }
       ],
       particles: [
